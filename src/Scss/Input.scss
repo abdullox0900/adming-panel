@@ -1,0 +1,30 @@
+@mixin InputOne() {
+    width: 100%;
+    padding: 12px 18px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #AEB6CF;
+    border: 1px solid #D9E1E7;
+    border-radius: 15px;
+    outline: none;
+    background: rgba(241, 245, 247, 0.0001);
+    transition: all 0.8s ease;
+
+    &:focus {
+        border: 1px solid #217EFD;
+
+        &::placeholder {
+            transition: all 0.8s ease;
+            color: #217EFD;
+        }
+    }
+
+    &::placeholder {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #AEB6CF;
+        transition: all 0.8s ease;
+    }
+}

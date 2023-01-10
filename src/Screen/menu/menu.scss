@@ -1,0 +1,105 @@
+@import "../../Scss/Style.scss";
+@import "../../Scss/Colors.scss";
+@import "../../Scss/Input.scss";
+
+.menu {
+    padding: 20px;
+    width: 270px;
+    min-height: 95vh;
+    border-radius: 15px;
+    background: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+    .menu-top {
+        @include DisplayAJ();
+        margin-bottom: 15px;
+        // border-bottom: 1px solid #E4E7ED;
+
+        &__logo {
+            width: 80px;
+            height: 50px;
+            object-fit: cover;
+        }
+
+        &__status {
+            padding: 3px 25px;
+            font-size: 14px;
+            color: #09A874;
+            border-radius: 10px;
+            background: rgba(26, 213, 152, 0.298039);
+            border: 1px solid #1AD598;
+        }
+    }
+
+    .menu-main {
+        height: 88vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__search {
+            @include InputOne;
+            margin-bottom: 20px;
+        }
+    }
+
+    .menu-drop {
+        // margin-top: 20px;
+
+        &__down {
+            @include TitleSize14();
+            @include DisplayA();
+            position: relative;
+            padding: 15px;
+            font-size: 14px;
+            color: #809FB8;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+
+            ion-icon {
+                margin-right: 10px;
+                font-size: 18px;
+                color: #809FB8;
+                transition: all 0.4s ease;
+            }
+
+            ion-icon:nth-child(2) {
+                position: absolute;
+                right: 0px;
+                top: 32%;
+                margin-left: 60px;
+                font-size: 18px;
+            }
+
+            &:hover {
+                color: #217EFD;
+                background: #F1F5F7;
+
+                ion-icon {
+                    color: #217EFD;
+                }
+            }
+        }
+
+        .menu-drop__down + .menu-drop__down {
+            margin-top: 7px;
+        }
+    }
+
+    .menu-drop__down-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ant-segmented {
+        margin-top: 15px;
+        border-radius: 20px;
+        background-color: #F1F5F7;
+    }
+
+    .ant-segmented .ant-segmented-item {
+        border-radius: 50px !important;
+    }
+}

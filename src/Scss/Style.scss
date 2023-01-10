@@ -1,0 +1,24 @@
+@mixin DisplayColumn() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin DisplayAJ() {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin DisplayA() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin TitleSize14() {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #4D525B;
+}
