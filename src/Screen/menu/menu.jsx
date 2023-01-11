@@ -12,13 +12,13 @@ function Menu() {
     return (
         <section className="menu">
             <div className="menu-top">
-                {/* <img className="menu-top__logo" src="https://logos-marques.com/wp-content/uploads/2021/07/Maestro-logo.png" alt="logo" />
-                <div className="menu-top__status">Live</div> */}
+                {/* {/* <img className="menu-top__logo" src="https://logos-marques.com/wp-content/uploads/2021/07/Maestro-logo.png" alt="logo" /> */}
+                <div className="menu-top__logo-box"><span>A</span> panel</div>
             </div>
 
             <div className="menu-main">
                 <div>
-                    <input className="menu-main__search" type="text" placeholder="Search..." />
+                    {/* <input className="menu-main__search" type="text" placeholder="Search..." /> */}
                     <div className="menu-drop">
                         <div className="menu-drop__down"><ion-icon name="home-outline"></ion-icon>Dashboard <ion-icon name="chevron-down-outline"></ion-icon></div>
                         <div className="menu-drop__down"><ion-icon name="albums-outline"></ion-icon>Analytics <ion-icon name="chevron-down-outline"></ion-icon></div>
